@@ -11,7 +11,8 @@ GDA에서는 $x$가 continuous한 경우에 대해서 설명을 함 → 이번�
     
 - email에서 ‘a’와 ‘buy’ 단어가 들어가 있을 때, feature vector는 다음과 같이 표기됨
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/190f528d-cf58-4f62-a1b4-744a52e1ddbf/image.png)
+    ![](https://i.imgur.com/WYNIteB.png)
+
     
 
 만약 Vocabulary가 50000단어로 이뤄져 있을 때, feature vector는 $\{0,1\}^{50000}$으로 표현됨.
@@ -24,7 +25,7 @@ GDA에서는 $x$가 continuous한 경우에 대해서 설명을 함 → 이번�
 - $y$가 주어졌을 때, $x_1, \dots, x_d$는 조건부 독립!
 - 하나의 단어가 나타난다는 사실이 다른 단어가 나타날 확률에 영향을 주지 않는다는 가정
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/e1b0612b-abd6-4f39-8c49-a62edcde1959/image.png)
+![](https://i.imgur.com/ohjn8yJ.png)
 
 예를 들어, y = 1이 스팸 이메일을 의미하고 “buy"가 2087번째 단어이고 “price"가 39831 번째 단어인 경우를 생각 ($y = 1$은 특정 이메일이 스팸이라는 뜻)
 
@@ -39,7 +40,7 @@ $φ_{j\mid y=1} = p(x_j = 1 \mid y = 1)$, $φ_{j\mid y=1} = p(x_j = 1 \mid y = 1
 
 - training example $\{(x^{(i)}; y^{(i)});i=1,\dots,n\}$가 주어질 때, joint likelihood는 다음과 같이 표현됨
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/a4513a63-22a6-4c69-beed-0cb483c3b5cb/image.png)
+![](https://i.imgur.com/L7Yq4he.png)
 
 likelihood와 prior knowledge에 대한 모델링이 완성되었으므로, 예측을 실시하도록 함
 

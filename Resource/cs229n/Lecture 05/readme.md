@@ -20,7 +20,7 @@ $$ p(x)= p(x \mid y = 1)p(y = 1) + p(x \mid y = 0)p(y = 0) $$
 
 - $p(x)$: margin 확률을 계산한 확률 분포임. y에 의존하지 않는 형태이므로 고려하지 않아도 됨
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/e9f52fc3-9920-4a4d-b384-db0cf6a34916/image.png)
+![](https://i.imgur.com/I9gOH2u.png)
 
 살펴봐야 할 것은 다음과 같음
 
@@ -59,9 +59,9 @@ $$ \text{Cov}(Z) = \mathbb{E}[(Z - \mathbb{E}[Z])(Z - \mathbb{E}[Z])^T] $$
 
 input feature $x$가 classificaiton problem에서 continuous-valued random variable일 경우, $p(x \mid y)$를 다변량 가우시안 분포로 사용할 수 있는 GDA 모델을 적용할 수 있음
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/398d1d2b-6b31-43bb-9f1b-c5254f149fb8/image.png)
+![](https://i.imgur.com/nUNpXfN.png)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/55c706f9-d07b-4045-a6b8-ce08228a635c/image.png)
+![](https://i.imgur.com/QG4ltUk.png)
 
 - $p(y)$는 사전 분포라고 하는데, 편의를 위해서 Bernuil distribution임을 알고 있는 상황이라고 가정을 내림
 
@@ -87,17 +87,16 @@ $$ L(\phi, \mu_1, \mu_0, \Sigma) = p((x^{(1)},y^{(1)}), \dots, (x^{(n)},y^{(n)})
 
 **모든 example들이 동일 확률 분포를 가지면서 독립적으로 샘플링(i.i.d condition)을 가졌다고 가정.**
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/6643cbbe-d02e-419d-b629-c9e8195e8d16/image.png)
+![](https://i.imgur.com/DCGBo8A.png)
 
 좀 더 식을 진행시킨다면…
 
-$$ \begin{aligned} \argmax L(\phi, \mu_0, \mu_1, \Sigma) &= \argmax \ \log L(\phi, \mu_0, \mu_1, \Sigma) \\ &= \argmax \sum^n_{i=1}\log p(x^{(i)}\mid y^{(i)}, \mu_0, \mu_1, \Sigma) + \log p(y^{(i)};\phi) \end{aligned} $$
+$$ \begin{aligned} \arg\max L(\phi, \mu_0, \mu_1, \Sigma) &= \arg\max \ \log L(\phi, \mu_0, \mu_1, \Sigma) \\ &= \arg\max \sum^n_{i=1}\log p(x^{(i)}\mid y^{(i)}, \mu_0, \mu_1, \Sigma) + \log p(y^{(i)};\phi) \end{aligned} $$
 
 이러한 요소들을 풀려면, gradient를 통해서 모든 파라미터에 대한 최적값을 구해야함.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/9feb5bdf-3501-444e-b77b-a25cfac0da17/image.png)
+![](https://i.imgur.com/OPElubp.png)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/0d33dc7d-9d1a-402c-a9cc-0c4aee0f6e0d/image.png)
 
 여기서 알아야 하는 것
 

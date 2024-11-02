@@ -8,14 +8,14 @@
 
 $$ h_\theta(x)=\theta_3x^3+\theta_2x^2+\theta_1x+\theta=\theta^T\phi(x) $$
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/2172fd12-758e-46d9-83b9-bf4419657f1d/image.png)
+![](https://i.imgur.com/W3yG1RP.png)
 
 - $\theta^T \phi(x)$는 스칼라 → $h_\theta(x)$는 linear!
 - 중요한 것은 input data이 1차원이 아닌 다차원 (4차원) $x$가 됨!
 
 당장 차원이 degree 3-poly일 경우에는 다음과 같이 표현됨
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/91906647-612e-4d77-832e-f60475e4fe47/image.png)
+![](https://i.imgur.com/AyXTZlp.png)
 
 $$ \theta^T \phi(x), \phi(x) \in \mathbb{R}^p \quad\text{where }\ p=1+d+d^2+d^3 $$
 
@@ -27,20 +27,19 @@ $$ \theta^T \phi(x), \phi(x) \in \mathbb{R}^p \quad\text{where }\ p=1+d+d^2+d^3 
 **kernel trick을 통해서 계산의 효율성을 높일 수 있도록 함 (Ray observation)**
 
 - $p$ 차원 파라미터를 $n$개의 스칼라의 선형 조합으로 구성할 수 있도록 함
-
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/d63d92d0-3363-45c6-9ad8-60097b6ea6a6/image.png)
+![](https://i.imgur.com/wwSKzYZ.png)
 
 이렇게 표현할 경우에는 Degree Of Freedom (DOF)가 줄어들지만 계산 효율성이 압도적으로 좋아진다는 장점을 가지고 있음.
 
 **$\theta$가 아닌 $\beta$를 저장하고 업데이트하기 때문에 학습의 효율성이 높아진다.**
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/587bd02c-9ca6-4765-8f0a-4ae179a3f2cc/image.png)
+![](https://i.imgur.com/reY7N8O.png)
 
 하지만 $\beta$를 업데이트할려면 내적 계산 $<\cdot>$을 해야만 한다.
 
 - 아직도 $O(p)$가 걸리기 때문에 추가적인 trick을 적용할 필요가 있다.\
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/cacb7765-8f9c-4b1a-8f22-227013961b57/image.png)
+![](https://i.imgur.com/SVghXC7.png)
 
 $$ <\phi(x^{(i)})\cdot \phi(x^{(j)})> $$
 
@@ -51,7 +50,7 @@ $$ <\phi(x^{(i)})\cdot \phi(x^{(j)})> $$
 
 이러한 사실들을 기억한 상태로 내적을 실제로 진행해보자
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/12a1fd15-b452-41ec-a081-3a5b11aa9044/8c2160af-94f9-4c0a-8c4f-b92e772657c4.png)
+![](https://i.imgur.com/1HVvc8G.png)
 
 오른쪽 식을 다시금 정리해보자
 
@@ -71,7 +70,7 @@ $$ <\phi(x),\phi(z)>=1+<x,z>+<x,z>^2+<x,z>^3 $$
 
 - kernel function을 적용한 regression의 경우에는 다음과 같이 표현된다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/dabc4b7e-2b9a-4621-a9c6-e5121652d3bf/image.png)
+![](https://i.imgur.com/XKDgRdK.png)
 
 Update rule를 적용한 term을 끄집어 보겠다
 
@@ -97,11 +96,11 @@ $$ \int \int g(x) k(x, y) g(y) \, dx \, dy \geq 0 $$
 
 예를 들어서…
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/86f3babb-afed-4a95-9c84-7b01bed6e887/image.png)
+![](https://i.imgur.com/jlsIEMx.png)
 
 $d=3$일 때, 위 kernel function이 지원하는 데이터 형식은 다음과 같다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/7766f4dc-c953-4c9b-941b-9ac9e6fae248/image.png)
+![](https://i.imgur.com/Xkf4Kcz.png)
 
 또 다른 예시로써, $\phi(\cdot)$이 무한한 차원일 경우에는 다음 kernel function을 지원한다.
 

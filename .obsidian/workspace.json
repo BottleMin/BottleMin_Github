@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/cs229n/Lecture 07/readme.md",
+                "file": "Resource/cs229n/Lecture 05/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,8 +162,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8178f0cc28a2a73",
+  "active": "6084596df01db68a",
   "lastOpenFiles": [
+    "Resource/cs229n/Lecture 06/readme.md",
+    "Resource/cs229n/Lecture 07/readme.md",
     "Resource/cs229n/Lecture 08/readme.md",
     "Resource/cs229n/Lecture 09/readme.md",
     "Resource/cs229n/Lecture 10/readme.md",
@@ -171,9 +173,7 @@
     "Resource/cs229n/Lecture 14",
     "Resource/cs229n/Lecture 10",
     "Resource/cs229n/Lecture 09",
-    "Resource/cs229n/Lecture 07/readme.md",
     "Resource/cs229n/Lecture 08",
-    "Resource/cs229n/Lecture 06/readme.md",
     "Resource/cs229n/Lecture 07",
     "Resource/cs229n/Lecture 05/readme.md",
     "Resource/cs229n/Lecture 06",
