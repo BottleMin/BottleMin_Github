@@ -155,7 +155,6 @@
       "switcher:퀵 스위처 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 데일리 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
@@ -164,6 +163,7 @@
   },
   "active": "6084596df01db68a",
   "lastOpenFiles": [
+    "99.attachments/Pasted image 20241102145529.png",
     "Resource/cs231n/Lecture 06/readme.md",
     "Resource/cs231n/Lecture 07/readme.md",
     "Resource/cs231n/Lecture 07",
