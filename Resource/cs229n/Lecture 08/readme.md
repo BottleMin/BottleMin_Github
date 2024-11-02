@@ -5,7 +5,7 @@
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/a7d4974c-58d7-49bb-85d8-d934c221d7a3/image.png)
+![](https://i.imgur.com/dclVO8m.png)
 
 머신러닝에서 bias?
 
@@ -15,7 +15,7 @@
 
 bias와 variance가 매우 높은지를 학습 알고리즘을 통해서 bias나 variance가 매우 높은지 확인할 필요가 있음
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/24767b04-952d-4842-80a6-9944c7f2e0cb/image.png)
+![](https://i.imgur.com/jAVbTkv.png)
 
 지금부터 bias-variance를 수식적으로 나타낼 예정이다.
 
@@ -38,22 +38,77 @@ $$ \text{Generalization gap}=L(\theta) - J(\theta) $$
 - $L(\theta)$는 우리가 제어할 수 없는 term
 - $J(\theta)$는 우리가 제어할 수 있는 term, 즉 opimization이 가능한 term
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/adc93894-2ef6-4993-8778-772d736f2dff/image.png)
+![](https://i.imgur.com/5EGRHhj.png)
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/575e9fcf-5467-4591-a2ab-1c0b137cfe4d/image.png)
+![](https://i.imgur.com/W5RimPl.png)
 
-<aside> 💡
-
-**그럼 어떤 경우에서 overfitting이 일어나는지, underfitting이 일어나는 지를 확인해야한다.**
+💡**그럼 어떤 경우에서 overfitting이 일어나는지, underfitting이 일어나는 지를 확인해야한다.**
 
 - Loss function이 MSE로 정의된 경우에만 Bias와 variance에 대한 수식적인 해석이 가능하다.
 - Loss function을 frequentist적 관점에서 bias-variance 관계를 해석하고 있음을 유의해야 한다.
 
-다음 페이지를 통해서 수식 과정을 확인해 볼 수 있다.
+![](https://i.imgur.com/9utC0AE.png)
 
-[Derive Bias-Variance Trade-off](https://www.notion.so/Derive-Bias-Variance-Trade-off-126b3d57d6448119a747c981276a8c9f?pvs=21)
+- frequentist 관점에서 참에 해당하는 가설이 존재한다. 이를 $h^*(x)$이라고 정의하도록 한다.
+- training dataset $S = \{x^{(i)}, y^{(i)}\}^n_{i=1}$이 있다고 할 때 다음과 같은 관계식을 갖는다.
 
-</aside>
+$$ y^{(i)}=h^*(x^{(i)})+\varepsilon $$
+
+이 때, $\varepsilon \sim N(0,\sigma^2)$을 따르도록 한다. (자연적으로 발생한 노이즈의 경우에는 해당 분포를 전제로 한다.)
+
+dataset $S$을 기반으로 추정한 가설을 $\hat{h}_S$이라고 정의를 한다.
+
+- $y=h^*(x)+\varepsilon$ 관계식으로 이루어진 test example $(x,y)$이 있다고 하자
+- 이때 test example과 추정 가설 간에 residual error는 다음과 같이 나타내도록 한다.
+
+$$ \text{MSE}(x)=\mathbb{E}_{S,\varepsilon}[(y-h_S(x))^2] $$
+
+MSE를 decompose하여 bias와 variance term을 나타내도록 한다.
+
+![](https://i.imgur.com/Jq7RKSK.png)
+
+위의 전개식을 정리하자면 다음과 같다.
+
+$$ \text{MSE} = \sigma^2 + \mathbb{E}[(h^*(x)-h_S(x))^2] $$
+
+---
+
+**무한히 많은 데이터셋을 이용하여 여러 모델을 훈련한 후, 그 모델들의 예측값을 평균낸 평균 모델을** **$h_{avg}(x) = \mathbb{E}_S[h_S(x)]$으로 정의**
+
+- 실제로는 무한대의 example을 수집할 수 없으므로 현실에서 구현 가능하지 않고 분석적인 목적으로 사용
+
+**$h_{avg}$는 무한한 sample을 가진 단일 데이터 세트에서 훈련하여 얻은 모델과 거의 같음**
+
+- **무한한 샘플을 기반으로 훈련한 모델의 예측값은 제한된 데이터셋에서 훈련된 여러 모델의 예측값의 평균과 유사**
+- 여러 모델의 평균을 취하는 평균 모델은 각 모델들이 가지는 Bias가 상쇄되어 더 낮은 Bias를 가지는 결과를 얻을 수 있음
+- 이는 Bias에 대한 직관적 정의와 일치 → 개별 모델들보다 더 좋은 Generalization을 보여줌
+    - **[Note that]** bias: 모델이 데이터의 참된 분포에서 얼마나 벗어난 예측을 하는지를 나타내는 척도
+
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/603409f3-9dbb-4201-8195-bf3516f05c48/image.png)
+
+$$ \text{MSE}(x) = \sigma^2 + (h^*(x) - h_{\text{avg}}(x))^2 + \mathbb{E}[(h_{\text{avg}}(x) - h_S(x))^2] $$
+
+**$\sigma^2$ → 데이터의 노이즈**
+
+- 모델의 성능에 관계없이 발생하는 오차
+
+**$h^*(x) - h_{\text{avg}}(x))^2$ → Bias의 제곱**
+
+- 평균 모델와 참된 모델 사이의 차이
+- 모델이 실제 데이터 분포에서 얼마나 벗어나 있는지를 나타냄
+- 모델이 과하게 단순화되어 데이터의 패턴 파악이 힘들수록 Bias가 커짐 ($h_{avg}$ 감소)
+
+**$\text{var}(h_S(x))$ → 모델의 Variance**
+
+- 데이터셋에 의해 훈련된 모델의 예측값이 평균 모델와 얼마나 일관성이 없는지?
+- 여러 데이터셋에 따른 예측의 변동성을 의미
+- Variance가 클수록 모델이 데이터에 overfitting되어, 새로운 데이터에 대해 잘 일반화되지 못함
+
+어차피 $\sigma$는 변하지 않는 상수이므로 제외한다면…
+
+$$ \text{MSE} = \text{bias}^2 + \text{variance} $$
+
+가 된다.
 
 한 줄 요약하자면…
 

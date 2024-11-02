@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/cs229n/Lecture 09/readme.md",
-                "mode": "source",
+                "file": "Resource/cs229n/Lecture 08/readme.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -164,10 +164,10 @@
   },
   "active": "6084596df01db68a",
   "lastOpenFiles": [
+    "Resource/cs229n/Lecture 09/readme.md",
     "Resource/cs229n/Lecture 10/readme.md",
     "Resource/cs229n/Lecture 14/readme.md",
     "Resource/cs229n/Lecture 14",
-    "Resource/cs229n/Lecture 09/readme.md",
     "Resource/cs229n/Lecture 10",
     "Resource/cs229n/Lecture 08/readme.md",
     "Resource/cs229n/Lecture 09",
