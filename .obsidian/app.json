@@ -1,3 +1,5 @@
 {
-  "attachmentFolderPath": "00.attachments"
+  "attachmentFolderPath": "00.attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "01.post"
 }
