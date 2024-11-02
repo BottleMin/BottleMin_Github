@@ -163,8 +163,9 @@
   },
   "active": "6084596df01db68a",
   "lastOpenFiles": [
-    "Resource/cs231n/Lecture 07/readme.md",
     "99.attachments/Pasted image 20241102145529.png",
+    "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
+    "Resource/cs231n/Lecture 07/readme.md",
     "Resource/cs231n/Lecture 06/readme.md",
     "Resource/cs231n/Lecture 07",
     "Resource/cs231n/Lecture 05/readme.md",
@@ -196,7 +197,6 @@
     "Resource/cs229n/Lecture 02/readme.md",
     "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
     "Literature Survey/Segment Anything/readme.md",
-    "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
     "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
     "readme.md"
   ]
