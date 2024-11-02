@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,9 +162,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a8178f0cc28a2a73",
+  "active": "79961e491f419ef3",
   "lastOpenFiles": [
-    "Post",
-    "readme.md"
+    "readme.md",
+    "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
+    "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields",
+    "Post/Literature Survey",
+    "Post"
   ]
 }
