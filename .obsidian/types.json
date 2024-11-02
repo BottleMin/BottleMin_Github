@@ -4,6 +4,7 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "conference": "multitext",
-    "con": "checkbox"
+    "con": "checkbox",
+    "Date": "date"
   }
 }

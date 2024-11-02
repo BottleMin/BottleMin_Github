@@ -55,7 +55,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -176,8 +176,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6185c3e6ce9d2b61",
+  "active": "a8178f0cc28a2a73",
   "lastOpenFiles": [
+    "ㄹㅇㄴㄴㅇ",
     "readme.md",
     "01.post/자기 소개서.md",
     "01.post",
