@@ -97,6 +97,8 @@ $$ \begin{aligned} \arg\max L(\phi, \mu_0, \mu_1, \Sigma) &= \arg\max \ \log L(\
 
 ![](https://i.imgur.com/OPElubp.png)
 
+![](https://i.imgur.com/qDnvEws.png)
+
 
 여기서 알아야 하는 것
 
