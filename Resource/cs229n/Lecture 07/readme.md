@@ -1,7 +1,8 @@
 
 # Chapter 5 Kernel methods
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/3a24d66c-480f-4db5-8507-61e02ec79ba4/image.png)
+![](https://i.imgur.com/HMHpEqx.png)
+
 
 데이터의 비선형성을 표현하기 위한 기술로 kernel → Nonlinear model로 처리하기 위한 trick
 

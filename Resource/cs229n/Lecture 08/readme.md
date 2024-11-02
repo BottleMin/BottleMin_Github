@@ -65,7 +65,8 @@ $$ \text{MSE}(x)=\mathbb{E}_{S,\varepsilon}[(y-h_S(x))^2] $$
 
 MSE를 decompose하여 bias와 variance term을 나타내도록 한다.
 
-![](https://i.imgur.com/Jq7RKSK.png)
+![](https://i.imgur.com/3z2hmmz.png)
+
 
 위의 전개식을 정리하자면 다음과 같다.
 
@@ -84,7 +85,7 @@ $$ \text{MSE} = \sigma^2 + \mathbb{E}[(h^*(x)-h_S(x))^2] $$
 - 이는 Bias에 대한 직관적 정의와 일치 → 개별 모델들보다 더 좋은 Generalization을 보여줌
     - **[Note that]** bias: 모델이 데이터의 참된 분포에서 얼마나 벗어난 예측을 하는지를 나타내는 척도
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/603409f3-9dbb-4201-8195-bf3516f05c48/image.png)
+![](https://i.imgur.com/Jq7RKSK.png)
 
 $$ \text{MSE}(x) = \sigma^2 + (h^*(x) - h_{\text{avg}}(x))^2 + \mathbb{E}[(h_{\text{avg}}(x) - h_S(x))^2] $$
 
@@ -108,15 +109,9 @@ $$ \text{MSE}(x) = \sigma^2 + (h^*(x) - h_{\text{avg}}(x))^2 + \mathbb{E}[(h_{\t
 
 $$ \text{MSE} = \text{bias}^2 + \text{variance} $$
 
-가 된다.
-
-한 줄 요약하자면…
-
-$$ \text{MSE} = \text{bias}^2 + \text{variance} $$
-
 으로 trade-off 관계라는 것을 알 수 있다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/60cd7a44-78fc-4f06-b9ea-990e89fbdc6f/image.png)
+![](https://i.imgur.com/A7OEB6w.png)
 
 ## Regularization
 
@@ -124,17 +119,17 @@ $$ \text{MSE} = \text{bias}^2 + \text{variance} $$
 
 $$ \min_\theta \frac{1}{2} \sum^m_{i=1} ||y^{(i)}-\theta^Tx||^2 + \lambda ||\theta||^2 $$
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/44f185a7-aa11-4c6a-b464-99960425fd1a/image.png)
+![](https://i.imgur.com/g0Ose0v.png)
 
 로지스틱 회귀의 경우에는 다음과 같음
 
-$$ \argmax \sum^n_{i=1} \log p(y^{(i)} \mid x^{(i)} ; \theta) - \lambda ||\theta||^2 $$
+$$ \arg\max \sum^n_{i=1} \log p(y^{(i)} \mid x^{(i)} ; \theta) - \lambda ||\theta||^2 $$
 
 **Text classification의 경우**
 
 - example $m = 100$, Vocabulary $n=10000$ 처럼
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/8199abdd-e695-407d-a9d8-03aa5d5ada80/image.png)
+![](https://i.imgur.com/eZWyzwa.png)
 
 해당 example은 차원보다 압도적으로 부족함
 
@@ -156,7 +151,7 @@ $$ p(\theta \mid S) \quad \rightarrow \quad\text{MLE} $$
 
 MLE가 로지스틱 회귀임을 가정해보면 베이즈 정리에 의해서 다음과 같이 정리하게 된다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/27a2989f-7c08-41c6-bc69-9f6e3742529a/image.png)
+![](https://i.imgur.com/eJUobh3.png)
 
 여기서 $\theta \sim N(0, \tau^2I)$이라고 할 때, $p(\theta)$는 다음과 같이 표현하게 된다.
 
@@ -186,7 +181,7 @@ $$ \log p(\theta) = \log \frac{1}{\sqrt{2\pi}(\tau^2I)^{0.5}} - \theta^T(\tau^2I
 
 그럼 Bayesian Approach의 특징이란?
 
-$$ \argmax_\theta p(\theta \mid S) = \argmax_\theta p(S \mid \theta) \times p(\theta) $$
+$$ \arg\max_\theta p(\theta \mid S) = \arg\max_\theta p(S \mid \theta) \times p(\theta) $$
 
 - $\theta$를 불확실하다. (= 확률적이다.) 다만, 데이터를 보기 전까지 문제에 관한 사전 지식을 반영할 수 있다.
 - 사전 지식과 함께 데이터를 관측한 후에 가장 확률이 높은 $\theta$를 찾아내는 것이 우리의 목표이다
@@ -201,7 +196,7 @@ $$ \argmax_\theta p(\theta \mid S) = \argmax_\theta p(S \mid \theta) \times p(\t
 - 수 십억개의 파라미터을 기반으로 모델을 학습하고, 괄목할만한 성능을 내었기 때문이다.
 - 이는 기존 Bias & Variance Error model로써 옳치 않는 직관을 가지고 있다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/0f4d35bb-15da-4a17-a3ba-a40b063152a3/image.png)
+![](https://i.imgur.com/eKKzyOc.png)
 
 **linear model의 경우 parameter와 data point의 개수가 비슷할 경우에 test Error가 pick를 찍는다.**
 
@@ -217,7 +212,7 @@ $$ \argmax_\theta p(\theta \mid S) = \argmax_\theta p(S \mid \theta) \times p(\t
 
 왜 이러는 지를 설명하기 위한 끊임없는 연구가 이뤄지고 있다고 한다. 다만 직관적으로 설명할 수 있는 부분은 다음과 같다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/edf67436-8339-4e47-b6b0-2072d7efa88b/image.png)
+![](https://i.imgur.com/9Rc7tch.png)
 
 **training Loss 관점**
 
@@ -254,7 +249,7 @@ $$ \text{nullity}(X) = d - \text{rank}(X) = d-n $$
 
 $$ \text{Claim: Gradient Descent with Initial value } \theta=0 \\ \argmin ||\theta||^2_2 \quad \text{s.t. } J(\theta)=0 $$
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/b1908449-8021-4af3-a0dc-bde71d0eeca2/image.png)
+![](https://i.imgur.com/aJzdOFf.png)
 
 부분 공간에서 영 공간에 가장 가까운 최소 norm을 갖는 최적의 해를 찾도록 한다.
 
