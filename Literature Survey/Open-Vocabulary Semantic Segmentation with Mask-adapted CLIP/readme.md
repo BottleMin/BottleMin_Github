@@ -78,7 +78,6 @@ zero token이 존재하지 않으므로 두 이미지의 domain distribution간�
 <br>
 
 ## 그래서 Mask-adapted CLIP는 어떻게 만들어지는가?
-***
 
 ### Generalization
 ![](https://velog.velcdn.com/images/bottlemin_park/post/b59107b5-874d-4f87-aae6-0a567eb9a169/image.png)

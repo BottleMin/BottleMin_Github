@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
+                "file": "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,18 +162,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6084596df01db68a",
+  "active": "a8178f0cc28a2a73",
   "lastOpenFiles": [
-    "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
-    "Post/Literature Survey/Segment Anything/readme.md",
-    "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP",
-    "Post/Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
-    "Post/Literature Survey/Segment Anything",
-    "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
-    "Post/Literature Survey/Emerging Properties in Self-Supervised Vision Transformers",
+    "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
+    "Literature Survey/Segment Anything/readme.md",
+    "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP",
+    "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
+    "Literature Survey/Segment Anything",
+    "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
+    "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers",
     "readme.md",
-    "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields",
-    "Post/Literature Survey",
+    "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields",
+    "Literature Survey",
     "Post"
   ]
 }
