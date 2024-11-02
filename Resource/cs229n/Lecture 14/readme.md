@@ -13,11 +13,11 @@ No label ($\{x^{(1)}, x^{(2)}, \dots, x^{(n)}\}$)으로 시작한다.
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/bbd2fcf2-51e9-4a7f-86ca-ef0ec2f0b936/image.png)
+![](https://i.imgur.com/Xwhd1RP.png)
 
 초기 데이터 $\{x^{(1)}, x^{(2)}, \dots, x^{(n)}\}$에 대한 data cloud를 설정하도록 한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/0686ba75-b664-459c-9215-7490f71d59c4/image.png)
+![](https://i.imgur.com/3vXX95i.png)
 
 **Step 1) Initialialize cluster centroid**
 
@@ -25,7 +25,7 @@ No label ($\{x^{(1)}, x^{(2)}, \dots, x^{(n)}\}$)으로 시작한다.
     - 이때 centroid는 cluster의 중심점이라고 추측을 한 상태이다.
 - 예시에서는 2개의 클러스터를 생성하므로, 두 개의 중심점을 설정한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/72a5c4a3-992d-4fc3-adf2-5966bab910a7/image.png)
+![](https://i.imgur.com/Calb5yW.png)
 
 **Step 2) Repeat untill convergence**
 
@@ -34,12 +34,12 @@ $$ c^{(i)} := \arg\min_j ||x^{(i)}-\mu_j||^2_2 $$
 - 모든 데이터 $x^{(i)}$에 대해, 2개의 centroid 중에서 가장 가까운 중심점을 선택하고, 그 데이터는 해당 중심점에 속하는 클러스터에 할당된다.
     - point를 coloring한다고 이해하면 된다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/03e3c54a-ce8a-447e-a8d0-92ad33361414/image.png)
+![](https://i.imgur.com/vns0fRP.png)
+
 
 - cluster point 끼리의 centroid를 다시 추정하여 convergence될 때까지 반복하도록 한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/a63bdfd1-0bb0-4248-a369-a9d3b0ba1534/image.png)
-
+![](https://i.imgur.com/pDn8ssx.png)
 $$ J(c,\mu)=\sum^m_{i=1} ||x^{(i)}-\mu_{c^{(i)}}||^2 $$
 
 할당된 data point와 클러스터 centroid에 대한 비용함수
@@ -57,7 +57,7 @@ $$ J(c,\mu)=\sum^m_{i=1} ||x^{(i)}-\mu_{c^{(i)}}||^2 $$
 
 ---
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/ca77f989-01d9-4a16-bcb4-48efc42c9a02/image.png)
+![](https://i.imgur.com/51KrbpD.png)
 
 Anomaly detection
 
@@ -74,7 +74,7 @@ Anomaly detection
 - 쉬운 접근을 위해서 $x$가 1차원 모델임을 가정하도록 한다. $(\{x^{(1)}, x^{(2)}, \dots, x^{(n)}\})$
 - 또한 label이 없는 unsupervised learning임을 다시 한번 강조한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/18e175ca-1e00-487e-867d-aecbd6ae0c4c/image.png)
+![](https://i.imgur.com/hoCuOmS.png)
 
 data를 다음과 같이 모델링할려고 한다.
 
@@ -96,18 +96,18 @@ $$ z^{(i)} \sim \text{Multinomial}(\phi) $$
 
 MOG에서 파라미터는 $\phi$와 $\mu$ 그리고 $\Sigma$이다. 이들을 추정하기 위해서 likelihood를 적용하도록 한다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/9cb96431-aa1a-466d-8d33-d835c717cc4c/image.png)
+![](https://i.imgur.com/3Clxk8N.png)
 
 - 하지만 랜덤 변수 $z^{(i)}$에 대해서 아는 정보가 없으므로 MLE를 closed form으로 얻기가 불가능하다.
 - 반대로 $z^{(i)}$를 알고 있다면, MLE를 구하기는 쉬울 것이다.
 
 좀 더 구체적으로 log-likelihood 형태로 풀어보자면 다음과 같다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/ecab2a33-2292-4812-be6b-eb6922ebcbfa/image.png)
+![](https://i.imgur.com/HPGKR3b.png)
 
 이미 잠재변수 $z^{(i)}$를 알고 있다는 가정하에 각 파라미터를 추정한다면
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/6de852d3-747f-4fa0-9dd9-de674f63604a/image.png)
+![](https://i.imgur.com/9l5hW4A.png)
 
 - 만약 Label이 있는 supervised learning의 경우에는 GDA model으로 추청할 수 있다.
 - 하지만 label이 없으므로 실제로 어느 Gaussian model에서 나온 것인지 알 수 없다는 문제가 존재
@@ -123,7 +123,7 @@ $$ w^{(i)}=p(z^{(i)}=j \mid x^{(i)}; \phi, \mu, \Sigma) = \frac{p(x^{(i)} \mid z
 
 - $p(x^{(i)} \mid z^{(i)}=j) = \frac 1 {(2\pi)^\frac n2 |\Sigma_j|^\frac 1 2} \exp(- \frac 12 (x^{(i)}-\mu_i)^T\Sigma_j^{-1}(x^{(i)}-\mu_i))$
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/ac194933-b38f-48b5-b07e-dfe8d214d8ec/image.png)
+![](https://i.imgur.com/O129mzV.png)
 
 - Sigmoid 함수로 정의하도록 한다.
 - j번째 Gaussian에 해당하는 데이터 샘플이 맞는지 판단하기 위해, 사후 확률 $w_j^{(i)}$를 계산한다.
@@ -137,7 +137,7 @@ $$ 1\{z^{(i)}=j\} \rightarrow w^{(i)}_j=\mathbb{E}[1\{z^{(i)}=j\}] $$
     - 직관적으로 보자면 $w_j^{(i)}$는 sigmoid 형태이므로 다른 클러스터 중심에 할당할 수 있다.
 - 만약 데이터 분포가 특정 가우시안 분포에서 나온 것이 확실하다면 $w_j^{(i)} \approx 1$이 된다.
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/754441df-aca4-4d28-b73f-c89395a0243e/image.png)
+![](https://i.imgur.com/0iD4syV.png)
 
 ## Jenson’s inequality
 
@@ -147,7 +147,7 @@ $$ 1\{z^{(i)}=j\} \rightarrow w^{(i)}_j=\mathbb{E}[1\{z^{(i)}=j\}] $$
 
 - $X$는 랜덤 변수라고 정의를 하자
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/cb404427-986b-4051-8f54-39e14292cdf6/image.png)
+![](https://i.imgur.com/jkrWWK7.png)
 
 만약 함수 f가 아래로 오목하다면 다음과 같은 부등식이 항상 성립한다.
 
@@ -171,7 +171,7 @@ EM을 도출하고 파라미터의 MLE을 찾기 위한 iterative 알고리즘
 
 - 목적은 가장 최적의 파라미터를 찾기 위해 반복적으로 알고리즘을 실행하는 것
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/03c09a63-6817-4bc1-bdb7-4178b55aff9b/image.png)
+![](https://i.imgur.com/hBJ3wxp.png)
 
 **E-step**
 

@@ -41,7 +41,8 @@ $$ P(|\phi - \hat{\phi}| > \gamma) \leq 2 \exp(-2 \gamma^2 n)
 
 $$
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/16b1bf59-dcd2-4762-9d0a-ccc6b2012b21/image.png)
+![](https://i.imgur.com/nSz4aEQ.png)
+
 
 **표본의 수 $n$가 클수록 $\hat{\phi}$가 $\phi$에 근접할 확률이 높아진다는 것을 의미**
 
