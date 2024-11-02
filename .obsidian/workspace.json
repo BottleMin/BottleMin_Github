@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Literature Survey/Segment Anything/readme.md",
+                "file": "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "cvpr",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,8 +161,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6084596df01db68a",
+  "active": "a8178f0cc28a2a73",
   "lastOpenFiles": [
+    "Literature Survey/Segment Anything/readme.md",
     "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
     "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
     "99.attachments/Pasted image 20241102145529.png",
@@ -196,7 +197,6 @@
     "Resource/cs229n/Lecture 14/readme.md",
     "Resource/cs229n/Lecture 14",
     "Resource/cs229n/Lecture 02/readme.md",
-    "Literature Survey/Segment Anything/readme.md",
     "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
     "readme.md"
   ]

@@ -1,3 +1,8 @@
+---
+tags:
+  - Computer_Vision
+  - 2023_CVPR
+---
 
 ![](https://velog.velcdn.com/images/bottlemin_park/post/76f89ebd-d13b-4c0a-bc81-6c96e83f025c/image.png)
 ## NeRF...?
