@@ -16,7 +16,8 @@
 
 - 이미지 데이터는 input 할 때에 이 픽셀 값들을 **1차원 array값으로 배열을 바꾸어 input 해준다.**
 
-![Pasted image 20240523152528.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/ee31428e-f63a-455f-bcf0-5a9de949cc86/91a5edb8-275d-404e-842d-0d1a3191a88b/Pasted_image_20240523152528.png)
+<!--⚠️Imgur upload failed, check dev console-->
+![[Pasted image 20241102145247.png]]
 
 - Semantic Gap : '의미상 차이' 우리가 이미지를 눈으로 받아들이는 방식과는 달리 **컴퓨터는 픽셀 값으로 받아들이기 때문에 생기는 문제들이 존재.**
 
