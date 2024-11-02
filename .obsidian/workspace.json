@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b23efde4dc84ccb4",
+        "id": "205716a8f974761c",
         "type": "tabs",
         "children": [
           {
-            "id": "79961e491f419ef3",
+            "id": "6084596df01db68a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
+                "file": "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -162,10 +162,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "79961e491f419ef3",
+  "active": "6084596df01db68a",
   "lastOpenFiles": [
-    "readme.md",
+    "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
+    "Post/Literature Survey/Segment Anything/readme.md",
+    "Post/Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP",
+    "Post/Literature Survey/Emerging Properties in Self-Supervised Vision Transformers/readme.md",
+    "Post/Literature Survey/Segment Anything",
     "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
+    "Post/Literature Survey/Emerging Properties in Self-Supervised Vision Transformers",
+    "readme.md",
     "Post/Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields",
     "Post/Literature Survey",
     "Post"
