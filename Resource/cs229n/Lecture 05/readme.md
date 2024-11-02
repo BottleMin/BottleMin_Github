@@ -1,6 +1,3 @@
----
-
----
 
 # Generative learning algorithms
 
