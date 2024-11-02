@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Resource/cs229n/Lecture 03/readme.md",
+                "file": "Resource/cs229n/Lecture 05/readme.md",
                 "mode": "source",
                 "source": false
               },
@@ -164,8 +164,14 @@
   },
   "active": "6084596df01db68a",
   "lastOpenFiles": [
-    "Resource/cs229n/Lecture 02/readme.md",
+    "Resource/cs229n/Lecture 06/readme.md",
+    "Resource/cs229n/Lecture 05/readme.md",
+    "Resource/cs229n/Lecture 06",
+    "Resource/cs229n/Lecture 04/readme.md",
+    "Resource/cs229n/Lecture 05",
     "Resource/cs229n/Lecture 03/readme.md",
+    "Resource/cs229n/Lecture 04",
+    "Resource/cs229n/Lecture 02/readme.md",
     "Resource/cs229n/Lecture 03",
     "Literature Survey/Open-Vocabulary Semantic Segmentation with Mask-adapted CLIP/readme.md",
     "Resource/cs229n/Lecture 02",
@@ -177,9 +183,6 @@
     "Literature Survey/Segment Anything",
     "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields/readme.md",
     "Literature Survey/Emerging Properties in Self-Supervised Vision Transformers",
-    "readme.md",
-    "Literature Survey/SPIn-NeRF Multiview Segmentation and Perceptual Inpainting with Neural Radiance Fields",
-    "Literature Survey",
-    "Post"
+    "readme.md"
   ]
 }
