@@ -1,3 +1,8 @@
+---
+tags:
+  - Computer_Vision
+  - 2023_CVPR
+---
 
 
 ## CLIP (Contrastive Language-Image Pre-training)

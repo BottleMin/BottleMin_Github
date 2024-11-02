@@ -1,5 +1,7 @@
 ---
-tags: 
+tags:
+  - Computer_Vision
+  - 2021_CVPR
 conference:
 ---
 
